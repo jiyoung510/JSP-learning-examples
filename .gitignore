@@ -73,3 +73,7 @@ local.properties
 *.log
 .metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps
 *.index
+*.index
+*.index
+*.xmi
+*.txt

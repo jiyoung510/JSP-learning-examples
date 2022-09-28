@@ -15,7 +15,7 @@ public class DBConnPool {
 	public PreparedStatement psmt;
 	public ResultSet rs;
 	
-	//기본 생성자
+	//기본 생성자 입니다.
 	public DBConnPool() {
 		try {
 			// 커넥션 풀(DataSource) 얻기
