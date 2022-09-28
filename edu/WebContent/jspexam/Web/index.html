@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>국립중앙박물관</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        //slide
+		var index = 0;
+		window.onload = function(){
+			slideShow();
+		}
+		function slideShow() {
+			var i;
+			var x = document.getElementsByClassName("slide");
+			for(i=0 ; i<x.length ; i++) {
+				x[i].style.display="none";
+			}
+			index++;
+			if(index>x.length) {
+				index = 1;
+			}
+			x[index-1].style.display="block";
+			setTimeout(slideShow,1500);
+		}
+    </script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="area">
+				<h1 class="logo"><a href="#"><img src="./img/header_logo.png" alt="국립중앙박물관로고"></a></h1>
+                <div class="gnb">
+                    <ul>
+                        <li class="drop"><a href="#">관람 정보</a>
+                            <ul class="sub">
+                                <li><a href="#">sub01</a></li>
+                                <li><a href="#">sub02</a></li>
+                                <li><a href="#">sub03</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">전시</a>
+                            <ul class="sub">
+                                <li><a href="#">sub01</a></li>
+                                <li><a href="#">sub02</a></li>
+                                <li><a href="#">sub03</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">교육</a>
+                            <ul class="sub">
+                                <li><a href="#">sub01</a></li>
+                                <li><a href="#">sub02</a></li>
+                                <li><a href="#">sub03</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop"><a href="#">학술</a>
+                            <ul class="sub">
+                                <li><a href="#">sub01</a></li>
+                                <li><a href="#">sub02</a></li>
+                                <li><a href="#">sub03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="util">
+                    <li><a href="LoginForm.jsp">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li class="search"><a href="#"><img src="./img/search.png" alt="검색"></a></li>
+                </ul>
+			</div>
+		</div>
+        <!-- //header -->
+        <!-- visual -->
+        <div id="visual">
+            <ul class="photo">
+                <li class="slide"><a href="#"><img src="./img/img1.jpg" alt=""></a></li>
+                <li class="slide"><a href="#"><img src="./img/img2.jpg" alt=""></a></li>
+                <li class="slide"><a href="#"><img src="./img/img3.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- //visual -->
+        <!-- containerIdx -->
+			<div class="containerIdx">
+				<div class="news">
+					<h2 class="title on" id="board01" onclick="noticeView()">공지사항</h2>
+					<ul class="list notice on" id="noticeBD">
+						<li><a href="#">박물관 소식을 한눈에!</a></li>
+						<li><a href="#">송파구 박물관 나들이 21th</a></li>
+						<li><a href="#">QR코드를 이용한 전시 해설을 시작합니다!</a></li>
+						<li><a href="#">박물관 생일잔치 속 특별교육 "암각화로 만나는 고래사냥" 사전 접수</a></li>
+						<li><a href="#">개관 30주년 기념 민속박물관 생일잔치</a></li>
+                        <li><a href="#">분실물 안내</a></li>
+					</ul>
+				</div>
+				<div class="banner">
+					<h2 class="title on">전시 안내</h2>
+					<p>
+						<a href="#"><img src="./img/ad_img1.jpg" alt="" width="240px"></a>
+					</p>
+				</div>
+				<div class="quick">
+					<h2 class="title on">바로가기</h2>
+					<p>
+						<a href="#"><img src="./img/ad_img2.jpg" alt="" width="240px"></a>
+					</p>
+				</div>
+			</div>
+			<!-- //containerIdx -->
+			<!-- footer -->
+			<div class="footer">
+				<p class="btmLogo">
+					<img src="./img/header_logo.png" alt="bottom logo">
+				</p>
+				<ul class="btmNav">
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">전자민원</a></li>
+                    <li><a href="#">공공데이터개방</a></li>
+                    <li><a href="#">저작권정책</a></li>
+				</ul>
+				<p class="copy">Copyright &copy; <strong>National Museum of Korea</strong>. All rights reserved.</p>
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "utf-8";
+	/* reset */
+    * {margin: 0; padding: 0;}
+	body, h1, h2, ul, li, p {margin:0; padding:0;}
+	body {color:#222328;font:14px/1.5 'Malgun Gothic',sans-serif}
+	img {vertical-align:top;}
+	li {list-style:none;}
+	a {color:#222328;text-decoration: none;display:block;}
+	a:hover {text-decoration: none;}
+	.blind {display:block;position:absolute;top:-9999em;left:-9999em;overflow:hidden;}
+	/* style */
+	.wrap {width:1000px;margin:0 auto;text-align: left;*zoom:1;}
+	.wrap:after {content:'';display:block;clear:both;}
+    /* header */
+    #header {float:left;width:100%;}
+    #header .logo {float:left;width:240px;padding:20px 0;margin-left:20px;}
+    #header .gnb ul li {float:left;}
+    #header .gnb ul li a {position:relative;font-size: 24px;font-weight: bold;padding:20px 30px;margin-top:8px;}
+    #header .gnb ul li .sub {display:none;position:absolute;}
+    #header .gnb ul li .sub li {float:none;width:100%;margin-bottom:-8px;}
+    #header .gnb ul li .sub li a {width:100%;display:block;background-color:#fff;border-bottom: 1px solid #b3b9c1;font-size: 15px;text-align: center;}
+    #header .gnb ul .drop:hover > .sub {display:block;box-shadow: 0px 10px 20px #b3b9c1;}
+    #header .gnb ul li .sub li a:hover {background-color: #b3b9c1;color:#fff}
+    #header .util {display:inline-block;text-align: right;}
+    #header .util li {float:left;padding:20px 10px;margin-left:10px;margin-top:12px;}
+    #header .util li a {font-size: 16px;}
+    #header .util .search a img{width:20px;height:20px;}
+    /* visual */
+    #visual {width:100%;}
+    #visual .slide img {width:100%;}
+
+/* containerIdx */
+.containerIdx {height:225px;padding-top:8px;*zoom:1;box-sizing:border-box;}
+.containerIdx:after {content:'';display:block;clear:both;}
+.containerIdx .news {position:relative;float:left;width:340px;}
+.containerIdx .news .title {float:left;cursor: pointer;}
+.containerIdx .news .list {position:absolute;left:0;right:0;top:30px;padding-top:10px;border-top: 1px solid #000;}
+.containerIdx .news .list.notice {display:block;padding-top: 18px;}
+.containerIdx .news .list.notice li {line-height: 26px;}
+.containerIdx .news .list.notice li a {display:block;width:90%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.containerIdx .news .list.notice li a:hover {text-decoration: underline;}
+.containerIdx .news .list.gallery {display:none;padding-left:10px;}
+.containerIdx .news .list.gallery:after {content:'';display:block;clear:both;}
+.containerIdx .news .list.gallery li {float:left;margin-right:7px;}
+.containerIdx .banner {float:left;width:330px;}
+.containerIdx .banner p {padding-top:10px;border-top: 1px solid #000;text-align: center;}
+.containerIdx .quick {float:left;width:330px;}
+.containerIdx .quick p {padding-top:10px;border-top: 1px solid #000;text-align: center;}
+.containerIdx .title {display:inline-block;padding:0 15px;background-color: #e6f3ff;color:#000;font:bold 16px/30px 'Malgun Gothic',sans-serif}
+.containerIdx .title.on {background-color: #000;color:#e6f3ff;}
+/* footer */
+.footer {height: 100px;border-top: 1px solid #b3b9c1;box-sizing:border-box;}
+.footer:after {content:'';display:block;clear:both;}
+.footer .btmLogo {float:left;margin-top: 10px;width:144px;}
+.footer .btmNav {padding:10px 0 7px;margin-left: 250px;line-height: 50px;}
+.footer .btmNav li {float:left;display:inline;margin-right: 40px;}
+.footer .btmNav li:hover {text-decoration: underline;}
+.footer .btmNav::after {content:'';display:block;clear:both;}
+.footer .copy {margin-left:250px;border-top:1px solid #ccc;line-height:45px;}
+
+/* default*/
+.container{
+    width: 1000px;
+    height: 100%;
+    padding: 0 20px;
+}
+li{
+    float: left;
+}
+a{
+/*     width: 100%;
+    height: 100%; */
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+}
+input{
+	font-size: 18px;
+}
+
+/* login */
+#section2{
+    height: 600px;
+}
+#section2 .container {
+	height: 100%;
+	width : 100%;
+}
+#section2 > .container > .loginBox{
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px solid #cbcbcb;
+}
+#section2 .loginBox > div{
+    width: 100%;
+    height: 320px;
+    border-bottom: 1px solid #cbcbcb;
+}
+#section2 .loginBox .box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 30px 30px;
+    border-right: 1px solid #cbcbcb;
+}
+#section2 .loginBox .box .logo{
+    height: 55px;
+    border-bottom: 2px solid black;
+}
+#section2 .loginBox .box form{
+    margin-top: 20px;
+}
+#section2 .loginBox .box .id_jsp{
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#section2 .loginBox .box .idck_jsp{
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#section2 .loginBox .box .pw_jsp{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+#section2 .loginBox button{
+    width: 100%;
+    height: 40px;
+    background: #00bd39;
+    color: white;
+    
+    border: 0;
+    font-size: 16px;
+    outline: 0;
+    cursor: pointer;
+}
+#section2 .loginBox .box form > button{
+    margin-top: 30px;
+}
+#section2 .social{
+    margin-top: 0px;
+}
+#section2 .social > h1{
+    margin-bottom: 20px;
+}
+#section2 .social > button{
+    float: left;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#section2 .social > button.facebook{
+    background: #3b5999;
+    margin-top: 33px;
+}
+#section2 .social > button.twitter{
+    background: #1da1f3;
+}
+#section2 .social > button.naver{
+    background: #00bd39;
+}
+
+#section2 .alert{
+    padding: 20px 30px;
+}
+#section2 .alert button{
+    width: calc(50% - 10px);
+    margin-top: 15px;
+    float: left;
+    background: white;
+    color: #00bd39;
+    border: 1px solid #00bd39;
+    font-size: 20px
+}
+#section2 .alert button:nth-child(1){
+    margin-right: 10px;
+}
+#section2 .alert button:last-child{
+    margin-left: 10px;
+}
+#section2 .alert button:hover{
+    color: white;
+    background: #00bd39;
+}
+/* //#section2 */
